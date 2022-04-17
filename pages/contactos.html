@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/LOGO/LOGO REPAP.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+     <!--mediaqueries -->
+     <link rel="stylesheet" href="css/mediaqueries.css">
+
+     <!-- fontawesome -->
+<script src="https://kit.fontawesome.com/750d39e939.js" crossorigin="anonymous"></script>
+    <title> REPAP: Contacto</title>
+</head>
+<body class="body1">
+
+    <header >
+        <h1 class="encabezadoshome2"> Necesitas un repuesto?... Entonces contactanos ya! <img class="imagenminiminiatura" src="../assets/LOGO/LOGO REPAP.jpg" alt="logo" width="50" height="50">  </h1>
+    </header>
+
+    <nav class="navbar">
+        <img class="logo" src="../assets/LOGO/LOGO REPAP.jpg" alt="logo">
+    
+        <ul class="menu" >
+    <li ><a href="../index.html">Inicio</a> </li>
+    <li><a href="../pages/sobrelaempresa.html" > Sobre la Empresa </a> </li>
+    <li> <a href="../pages/trabajos.html" > Trabajos</a> </li>
+    <li> <a href="../pages/buscatumodelo.html"> Busca tu Modelo</a> </li>
+    <li> <a href="../pages/contactos.html" >Contacto</a>  </li>
+        </ul>
+    
+    <div class="bar">
+    <i class="fa-solid fa-bars"></i>
+    
+    </div>
+    
+    <div class="shop">
+    <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    
+    </nav>
+
+
+            <form action="procesar.php" method="post">
+
+        <fieldset class="tipodetexto11">
+
+
+    <legend> Formulario de contacto </legend>
+
+            <p>
+    <label for="nombre">Ingresa tu Nombre: </label>
+    <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+            </p>
+
+            <p>
+    <label for="apellido">Ingresa tu Apellido: </label>
+    <input type="text" name="apellido" placeholder="Ingresa tu apellido">
+            </p>
+
+            <p>
+    <label for="pass"> Contraseña </label>
+    <input type="password" name="pass" placeholder="***********">
+            </p>
+
+            <p>
+    <label for="email"> email </label>
+    <input type="email" name="email" placeholder="xxx@xxx.com">
+            </p>
+
+            <p>
+    <label for="telefono"> telefono </label>
+    <input type="tel" name="telefono" placeholder="351*****">
+            </p>
+
+<!--Chekbox-->
+
+
+        <h2>Tipo de Combustible</h2>
+
+            <p> 
+    <label for="tipo de combustible">Nafta</label>
+    <input type="checkbox" name="tipo de combustible" value="Nafta" >
+            </p>
+
+            <p>
+    <label for="tipo de combustible">Diesel</label>
+    <input type="checkbox" name="tipo de combustible" value="Diesel" >
+            </p>
+
+            <p>
+    <label for="tipo de combustible">Electrico</label>
+    <input type="checkbox" name="tipo de combustible" value="Electrico" >
+            </p>
+
+<!--Radio-->
+
+        <h3>Alimentacion</h3>
+
+    <label for="Alimentacion">Carburacion </label>
+            <input type="radio" name="Alimentacion" value="Carburacion" >
+
+    <label for="Alimentacion">Inyeccion </label>
+        <input type="radio" name="Alimentacion" value="Inyeccion" >
+
+<!--Menu Desplegable-->
+        <h4>Cilindrada</h4>
+
+            <select name="Cilindrada" id="">
+                <option value="1.4 hasta 2.0">1.4 hasta 2.0</option>
+                <option value="2.1 hasta 2.5">2.1 hasta 2.5</option>
+                <option value="2.6 hasta 3.5">2.6 hasta 3.5</option>
+            </select>
+
+        <h5 class="tipodetexto11">Dejame tu comentario: </h5>
+
+            <textarea class="tipodetexto11" name="comentario" id="" cols="50" rows="15"></textarea>
+
+<!---BOTONES-->
+
+    <p1><input type="submit" value="enviar"> </p1>
+    <p2><input type="reset" value="borrar formulario"></p2> 
+    <p3><input type="button" value="sin acciones "> </p3>
+
+        </fieldset>
+
+            </form>
+
+    <footer class="tipodetexto11">
+        <p>Todos los derechos reservados . Repuesto Automotrices Perracino SRL <img class="FOOTERSOCIAL" src="../assets/LOGO/SOCIAL MEDIA LOGO.webp" alt="logo" width="50" height="50"> </p>
+    </footer>
+
+</body>
+</html>

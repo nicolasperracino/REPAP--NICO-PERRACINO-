@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Header*/
+
+.navbar{
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    /*background-image: radial-gradient( red, blue, yellow, white) ;
+*/ 
+
+
+
+}
+
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    grid-column: 2/3;
+}
+
+.navbar .menu{
+    display: flex;
+    justify-content: space-around;
+    grid-column: 4/7;
+}
+
+.navbar .menu li{
+list-style: none;
+}
+
+.navbar .menu a{
+    text-decoration: none;
+    color: blue;
+    cursor:pointer;
+}
+
+.bar{
+    display: none;
+}
+
+.shop{
+    grid-column: 8/9;
+}
+
+/*main*/
+
+.principal{
+    display: grid;
+    height: 80vh;
+    background-image: url(../assets/LOGO/aventador-sv-002.jpg);
+    background-size: cover;
+    background-position: center;
+max-width: 100%;
+display: grid;
+grid-template-columns: repeat(10,1fr);
+grid-template-rows: repeat(8,1fr);
+}
+
+.principal .contenido{
+    grid-column: 8/10;
+    grid-row: 2/5;
+    color: brown;
+}
+
+.principal h3{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.principal h1{
+    font-size: 35px;
+    color: yellow;
+    text-transform: capitalize;
+}
+
+.principal p{
+    font-weight: 200;
+}
+
+.principal .boton{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    color: gold;
+    padding: 10px 20px;
+    border: solid 2px white;
+    border-radius: 15px;
+}
+
+/*footer*/
+
+.piedepagina{
+    display: grid;
+    height: 100px;
+    align-items: center;
+    background-color: gray;
+    color: yellow;
+    grid-template-areas: "desarrollando seguime redes-sociales";
+}
+
+.desarrollando{
+    grid-area: desarrollando;
+    display: flex;
+    justify-content: center;
+}
+
+.seguime{
+    grid-area: seguime;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales{
+    grid-area: redes-sociales;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
