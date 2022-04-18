@@ -11,32 +11,26 @@
     font-family: 'DatalegreyaThin';
     font-weight: bold;
     font-style: normal;
-
-
-
-font-size: 65px;
-color: #f0f0f0;
-background-position: right;
-background-repeat: repeat-y;
-background-size: cover;
-background size: 75px;
-text-align: center;
-
-animation-name: bounce;
-animation-duration: 4s;
-
+    font-size: 65px;
+    color: #f0f0f0;
+    background-position: right;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background size: 75px;
+    text-align: center;
+    animation-name: bounce;
+    animation-duration: 4s;
 }
 
 .encabezadoshome1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-color: #f0f0f0;
-text-align: center;
+    color: #f0f0f0;
+    text-align: center;
 }
 
 .imagenminiminiatura{
     border: solid #023b99;
     border-radius: 20px;
-    
     animation-name: rotar_logo;
     animation-iteration-count:infinite;
     animation-timing-function: linear;
@@ -64,7 +58,6 @@ text-align: center;
         background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
         /*background-image: radial-gradient( red, blue, yellow, white) ;
     */ 
-    
     }
 
 .navbar{
@@ -73,7 +66,6 @@ font-size: large;
     background-image: linear-gradient(white,blue, black, white );
     /*background-image: radial-gradient( red, blue, yellow, white) ;
 */ 
-
 }
 
 
@@ -83,7 +75,6 @@ font-size: large;
         background-image: linear-gradient(white,blue, black, white );
         /*background-image: radial-gradient( red, blue, yellow, white) ;
     */ 
-    
     }
 
 
@@ -124,10 +115,6 @@ list-style: none;
     grid-column: 8/9;
 }
 
-
-
-
-
 .MOTORESNAFTEROS{font-weight:bold;
     text-align:start;
     font-size: xx-large;
@@ -136,8 +123,7 @@ list-style: none;
     border-bottom: none;
     border-top: none;
     border-right: none;
-color:yellow;
-
+    color:yellow;
     animation-name: backInRight;
     animation-duration:10s ;
 }
@@ -150,11 +136,10 @@ color:yellow;
     font-weight: bold;
     text-decoration:underline;
     border: solid black;
-border-radius: 5px;
+    border-radius: 5px;
     background-image: linear-gradient(to left,black, blue,grey,blue,black);
     margin: 50px;
 }
-
 
 .IMAGENINDEX{
     border-radius: 50px;
@@ -178,9 +163,6 @@ ul{
     background-color: ;
 }
 
-*{margin:none;
-}
-
 main ol{text-align: center;
 
 }
@@ -194,16 +176,17 @@ main h3{text-align: center;
     font-style: italic;
     font-weight: lighter ;
     font-size: 50px;
-font-family: "poppins";
-text-align: center;
-border: solid black;
-border-radius: 5px;
-background-image: linear-gradient(to bottom, blue,grey);
-/*transform: translateX(300px);
-transform: rotate(30deg);
-transform: scale(9,5);
-transform: skew(150deg, 18deg);*/
-
+    font-family: "poppins";
+    text-align: center;
+    border: solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, blue,grey);
+/*
+    transform: translateX(300px);
+    transform: rotate(30deg);
+    transform: scale(9,5);
+    transform: skew(150deg, 18deg);
+*/
 }
 
 .tipodetexto1{
@@ -220,15 +203,6 @@ transform: skew(150deg, 18deg);*/
     font-family: "poppins";
     src: url("../assets/fonts/Poppins-Bold.ttf");
 }
-
-/*COMENTARIOS CON ESTOS SIMBOLOS 
-
-body{
-    background-color:aquamarine;
-}
-
-*/
-
 
 .head1{
     border-right: solid black;
@@ -250,12 +224,16 @@ body{
 .p{
     color: #f0f0f0;
     font-family: 'Roboto', sans-serif;
-line-height: 3;
-font-size: x-large;
+    line-height: 3;
+    font-size: x-large;
 }
 
 
-/*Metodologia Bem*/
+
+
+
+
+/*METODOLOGIA BEM*/
 .contenedor{
     max-width: 1000px;
     margin: 150px;
@@ -268,7 +246,7 @@ font-size: x-large;
     background-color:transparent;
     padding: 20px;
     border-color:aqua;
-border-radius: 50px;
+    border-radius: 50px;
     border: solid 20px;
     border-bottom: #fff;
     border-top: #fff;
@@ -310,15 +288,12 @@ border-radius: 50px;
     background-color: #000;
     border-radius: 10px;
     text-decoration: none;
-
     transition: all 3s;
 }
 
 .boton:hover{
     transform: translate(300px);
-
 }
-
 
 .boton__texto{
     color: #ed0c0c;
@@ -337,11 +312,10 @@ border-radius: 50px;
     position: relative;
     border-top: 200px;
     border:solid 5px green;
-padding: 25px;
-font-size: 20px;
-width: 200px;
-height: 150px;
-
+    padding: 25px;
+    font-size: 20px;
+    width: 200px;
+    height: 150px;
 }
 
 .padre{
@@ -354,7 +328,6 @@ height: 150px;
     width: 200px;
     height: 150px;
     overflow: scroll;
-
 }
 
 .hijo{
@@ -376,19 +349,16 @@ height: 150px;
     height: 700px;
     background-color:cornflowerblue;
     margin: auto;
-
     display: flex;
-flex-direction:row;
-flex-wrap:wrap;
-justify-content:flex-start;
-align-items:flex-start;
-
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:flex-start;
 }
 
 
 /*Hijos del flex container */
 .flex-item{
-
     width: 200px;
     height: 200px; 
     background-color: #ed0c0c;
@@ -398,14 +368,12 @@ align-items:flex-start;
 .flex-item:nth-child(odd) {
     background-color: green;
     align-self:flex-start;
-
 }
 
 
 .container{
     margin-top: 30px;
     background-color: bisque;
-    
 }
 
 .caja img{
@@ -421,20 +389,16 @@ align-items:flex-start;
     column-gap: 25px;
     row-gap: 10px;
 
-    /*
+/*
     justify-items: right;
-    
     align-items:end;
-
-justify-content:space-around;
-justify-items: left;
-column-gap: 25px;
-row-gap: 10px;
-height: 100vh;
-align-content: center;*/
-
-
-
+    justify-content:space-around;
+    justify-items: left;
+    column-gap: 25px;
+    row-gap: 10px;
+    height: 100vh;
+    align-content: center;
+*/
 }
 
 .grid-container div{
@@ -445,15 +409,6 @@ align-content: center;*/
 .hijoo{
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
 
 #grilla1{
     margin-bottom: 20px;
@@ -482,33 +437,29 @@ align-content: center;*/
 
 .main-1{
     background-color: black;
-color: white;
-grid-area: main;
-
-
-
+    color: white;
+    grid-area: main;
 /*
 border: solid 10px red;
 margin: 20px;
 */
-
 }
 
-.h1titulo {font-family: DatalegreyaThin;
+.h1titulo {
+    font-family: DatalegreyaThin;
     font-weight: bold;
     text-align: center;
     border: solid;
     border-radius: 10px;
     color: #f0f0f0;
     background-image: linear-gradient(to left,black, blue,grey,blue,black);
-
-    
     animation-name: tada ;
     animation-duration:7s ;
     animation-delay: 1s;
 }
 
-.h2titulo{font-family:"DatalegreyaThin";
+.h2titulo{
+    font-family:"DatalegreyaThin";
     font-weight: bold;
     text-align: right;
     font-size: xx-large;
@@ -516,13 +467,15 @@ margin: 20px;
     color: yellow;
 }
 
-.h3titulo{text-align: left;
+.h3titulo{
+    text-align: left;
     font-size: x-large;
     display: grid;
     color: yellow;
 }
 
-.h4titulo{font-family:"DatalegreyaThin";
+.h4titulo{
+    font-family:"DatalegreyaThin";
     font-weight: bold;
     background-image: linear-gradient(to right,black, blue,red,blue,black);
     text-align: center;
@@ -544,8 +497,6 @@ margin: 20px;
     width:auto;
     grid-template-rows: 350px 350px ;
 }
-
-
 
 .nav11{
     border: solid;
@@ -577,18 +528,14 @@ margin: 20px;
     width: 200px;
     height: 275px;
     margin: 20px;
-    
-transition: 3s;
-
+    transition: 3s;
 }
 
 
 .navimg:hover{
     height: 350px;
     width: 300px;
-
 }
-
 
 .navimg2 {
     border: solid yellow;
@@ -596,7 +543,6 @@ transition: 3s;
     width: 300px;
     height: 200px;
     margin: 20px;
-    
     transition: 3s;
 }
 
@@ -620,21 +566,19 @@ transition: 3s;
     background-color: #000;
     border: solid red;
     border-radius: 10px;
-    
-height: 100px;
-transition: height 3s;
-
+    height: 100px;
+    transition: height 3s;
     transform: skewY(2deg)
 }
 
 
 .botoncompra2:hover{
     height: 200px;
-
 }
 
 
-.botoncompra22 {text-align: center;
+.botoncompra22 {
+    text-align: center;
     align-items: center;
     font-size: x-large;
     color: aqua;
@@ -642,8 +586,6 @@ transition: height 3s;
     border: solid red;
     border-radius: 10px;
 }
-
-
 
 #grilla3{
     display: grid;
@@ -658,23 +600,33 @@ transition: height 3s;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*MEDIAQUERIESS
 */
 
 
 @media (min-width:10px) and (max-width: 600px) {
 
-.body1{
-    width: fit-content;
+    .body1{
+        width: fit-content;
 }
 
     .head1{
         border: none;
     }
     
-    
     .encabezadoshome1{
-    font-size: 43px;
+        font-size: 43px;
     }
 
     #encabezadoshome{
@@ -684,51 +636,49 @@ transition: height 3s;
 
     .bordesRedondeados{align-items:flex-start;
         margin: 5px;
-width:300px;
-height: 150px;
-border: solid blue;
-border-radius: 20px ;
-
+        width:300px;
+        height: 150px;
+        border: solid blue;
+        border-radius: 20px ;
     }
 
     .IMAGENINDEX{
         border-radius: 25px;
         border-bottom: solid 10px #022863;
         border-top: solid 10px #022863;
-    
     }
 
     .h4titulo{background-color: rgb(94, 87, 87);
-            text-align: center;
-            border: solid;
-            border-radius: 10px;
-            color: #f0f0f0;
-            margin: 10px;
+        text-align: center;
+        border: solid;
+        border-radius: 10px;
+        color: #f0f0f0;
+        margin: 10px;
         }
     
         .h3titulo{background-color: rgb(94, 87, 87);
-            text-align: center;
-            border: solid yellow;
-            border-radius: 10px;
-            color: white;
-            font-size: large;
+        text-align: center;
+        border: solid yellow;
+        border-radius: 10px;
+        color: white;
+        font-size: large;
         }
 
         .h2titulo{background-color: rgb(94, 87, 87);
-            text-align: center;
-            border: solid yellow;
-            border-radius: 10px;
-            color: white;
-            font-size: large;
+        text-align: center;
+        border: solid yellow;
+        border-radius: 10px;
+        color: white;
+        font-size: large;
         }
 
         .botoncompra2 {text-align: center;
-            align-items: center;
-            font-size: x-large;
-            color: aqua;
-            background-color: #000;
-            border: solid blue;
-            border-radius: 10px;
+        align-items: center;
+        font-size: x-large;
+        color: aqua;
+        background-color: #000;
+        border: solid blue;
+        border-radius: 10px;
         
         }
 
@@ -752,7 +702,6 @@ border-radius: 20px ;
     }
     
 
-
     .imagenminiminiatura{width: 35px;
         height: 35px;
     }
@@ -767,52 +716,53 @@ border-radius: 20px ;
 
 
         .h1titulo {
-            font-size: small;
+        font-size: small;
         }
 
         .navimg {
-            width: 150px;
-            height: 150px;
+        width: 150px;
+        height: 150px;
         }
 
 
         .navimg2 {
-            width: 200px;
-            height: 150px;
+        width: 200px;
+        height: 150px;
         }
 
-        .h2titulo{display: grid;
-            width: fit-content;
+        .h2titulo{
+        display: grid;
+        width: fit-content;
         }
         
         .botoncompra2 {
-            font-size: small;
+        font-size: small;
         
         }
 
         .repuestosparamotores{
-            font-size: large;
+        font-size: large;
         }
 
         .tipodetexto1{
-            font-size: large;
+        font-size: large;
         }
         
         .tipodetexto2{
-            font-size: large;
+        font-size: large;
         }
 
         .MOTORESNAFTEROS{
-            font-size: large;
-            color: #f0f0f0;
+        font-size: large;
+        color: #f0f0f0;
         }
         
         .tipodetexto11{
-            font-size: large;
+        font-size: large;
         }
 
         .MOTORESACOMBUSTION{
-            font-size: large;
+        font-size: large;
         }
         
         .p{
@@ -825,12 +775,10 @@ border-radius: 20px ;
         }
 
         .FOOTERSOCIAL{
-            display: block;
+        display: block;
 
         }
 
-
-        
 .shop{
         display: none;
     }
@@ -898,14 +846,13 @@ border-radius: 20px ;
 
 
 @media (min-width:601px) and (max-width:768px){
-        
+
     .navbar .menu a{font-size: large;
     }
     
     .navbar .logo{display: none;
     }
 
- 
     #encabezadoshome{
         font-size: 48px;
         
@@ -972,11 +919,10 @@ border-radius: 20px ;
     grid-template-rows: 350px 350px ;
 }
 
-
-
-
-
 }
+
+
+
 
 
 
@@ -1000,13 +946,11 @@ border-radius: 20px ;
         align-content: center;
     }
 
-    
 
     .navimg2 {
         width: 200px;
         height: 150px;
     }
-
 
     .h4titulo{background-color: rgb(94, 87, 87);
         text-align: center;
@@ -1050,11 +994,15 @@ border-top: none;
 
 }
 
+
+
+
+
+
 @media (min-width:1025px) and (max-width:5000px ){
-    
+
     .navbar .logo{display: none;
     }
-
 
     .encabezadoshome1{font-size: 65px;
 
@@ -1063,7 +1011,6 @@ border-top: none;
     #encabezadoshome{font-size: 65px;
 
     }
-
 
     .detallemenu{
         border-left: solid gray;
