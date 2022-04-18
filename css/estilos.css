@@ -1,16 +1,19 @@
 
 .bordesRedondeados{
     border: solid 5px blue;
-    border-left: 20px;
-    border-right: 20px;
+    border-left: 10px;
+    border-right: 10x;
     border-bottom: none;
     margin: 30px;
 }
 
 #encabezadoshome{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-weight: normal;
-        font-style: normal;
+    font-family: 'DatalegreyaThin';
+    font-weight: bold;
+    font-style: normal;
+
+
+
 font-size: 65px;
 color: #f0f0f0;
 background-position: right;
@@ -491,7 +494,8 @@ margin: 20px;
 
 }
 
-.h1titulo {
+.h1titulo {font-family: DatalegreyaThin;
+    font-weight: bold;
     text-align: center;
     border: solid;
     border-radius: 10px;
@@ -504,7 +508,9 @@ margin: 20px;
     animation-delay: 1s;
 }
 
-.h2titulo{text-align: right;
+.h2titulo{font-family:"DatalegreyaThin";
+    font-weight: bold;
+    text-align: right;
     font-size: xx-large;
     display: grid;
     color: yellow;
@@ -516,7 +522,8 @@ margin: 20px;
     color: yellow;
 }
 
-.h4titulo{
+.h4titulo{font-family:"DatalegreyaThin";
+    font-weight: bold;
     background-image: linear-gradient(to right,black, blue,red,blue,black);
     text-align: center;
     border: solid;
