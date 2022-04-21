@@ -1,0 +1,38 @@
+
+//VARIABLES
+
+$gradiente-fondo: linear-gradient(white, blue, black, white);
+$gradiente-titulo-secundario-fondo: linear-gradient(to left,black, blue,grey,blue,black);;
+
+
+.navbar {
+    background-image: $gradiente-fondo;
+    font-size: large;
+    display: flex;
+    /*background-image: radial-gradient( red, blue, yellow, white) ;
+    */
+    .logo {
+        width: 60px;
+        height: 60px;
+        grid-column: 2/3;
+      }
+    .menu {
+        display: flex;
+        justify-content: space;
+        grid-column: 4/7;
+      }
+  }
+
+.h1titulo {
+    font-family: DatalegreyaThin;
+    font-weight: bold;
+    text-align: center;
+    border: solid;
+    border-radius: 10px;
+    color: #f0f0f0;
+    background-image: $gradiente-titulo-secundario-fondo;
+    animation-name: tada ;
+    animation-duration:7s ;
+    animation-delay: 1s;
+    
+}

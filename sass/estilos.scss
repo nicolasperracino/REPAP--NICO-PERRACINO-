@@ -1,5 +1,18 @@
 
-//ANIDACION O NESTING
+//import
+@import "colores";
+@import "titulofuente";
+
+//VARIABLES
+
+$boton-compra-color: aqua;
+$navimg-color: yellow;
+$animacion-titulo-principal : bounce;
+
+//NESTING O ANIDACION
+
+
+//INDEX
 
 .body1 {
     background-color: #807469;
@@ -9,7 +22,7 @@
   background-size: contain;
   border-width: 25px;
 
-      #encabezadoshome{
+        #encabezadoshome{
     
     font-family: 'DatalegreyaThin';
     font-weight: bold;
@@ -20,10 +33,10 @@
     background-repeat: repeat-y;
     background-size: cover;
     text-align: center;
-    animation-name: bounce;
+    animation-name: $animacion-titulo-principal;
     animation-duration: 4s;
 
-    .imagenminiminiatura{
+                .imagenminiminiatura{
         border: solid #023b99;
         border-radius: 20px;
         animation-name: rotar_logo;
@@ -35,6 +48,26 @@
     }
 }
 
+.navbar {
+    background-image: $gradiente-fondo;
+    font-size: large;
+    display: flex;
+    /*background-image: radial-gradient( red, blue, yellow, white) ;
+    */
+    .logo {
+        width: 60px;
+        height: 60px;
+        grid-column: 2/3;
+      }
+    .menu {
+        display: flex;
+        justify-content: space;
+        grid-column: 4/7;
+      }
+  }
+
+
+
 .h1titulo {
     font-family: DatalegreyaThin;
     font-weight: bold;
@@ -42,16 +75,206 @@
     border: solid;
     border-radius: 10px;
     color: #f0f0f0;
-    background-image: linear-gradient(to left,black, blue,grey,blue,black);
+    background-image: $gradiente-fondo;
     animation-name: tada ;
     animation-duration:7s ;
     animation-delay: 1s;
     
 }
 
+#grilla2{
+    display: grid;
+    border: solid;
+    border-radius: 10px;
+    color: #f0f0f0;
+    background-color: #023b99;
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: repeat(2,2fr);
+    width:auto;
+    grid-template-rows: 350px 350px ;
 
+    .nav11 {
+        border: solid;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        background-color: #a3a19b;
+        color: white;
+        margin: 10px;
+        justify-content: center;
+
+        .navimg {
+            border: solid $navimg-color;
+            border-radius: 15px;
+            width: 200px;
+            height: 275px;
+            margin: 20px;
+            transition: 3s;
+
+            &:hover {
+                height: 350px;
+                width: 300px;
+            }
+            }
+.botoncompra {
+                color: $boton-compra-color;
+                background-color: #000;
+                border: solid blue;
+                border-radius: 10px;
+            }
+        }
+
+    .nav22 {
+        display: flex;
+        border: solid;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        background-color: #a3a19b;
+        margin: 10px;
+        color: white;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        .navimg2 {
+            border: solid $navimg-color;
+            border-radius: 15px;
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            transition: 3s;
+
+            &:hover {
+                height: 350px;
+                width: 350px;
+              }
+            }
+        .botoncompra {
+                color: $boton-compra-color;
+                background-color: #000;
+                border: solid blue;
+                border-radius: 10px;
+      }
+          }
+}
+
+.h2titulo {
+    font-family: "DatalegreyaThin";
+    font-weight: bold;
+    text-align: right;
+    font-size: xx-large;
+    display: grid;
+    color: yellow;
+    .botoncompra2 {
+        text-align: center;
+        align-items: center;
+        font-size: x-large;
+        color: $boton-compra-color;
+        background-color: #000;
+        border: solid red;
+        border-radius: 10px;
+        height: 100px;
+        transition: height 3s;
+        transform: skewY(2deg);
+        &:hover {
+            height: 200px;
+          }
+      }
+  }
+
+  .repuestosparamotores {
+    color: antiquewhite;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 50px;
+    font-family: "poppins";
+    text-align: center;
+    border: solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, blue, grey);
+    /*
+        transform: translateX(300px);
+        transform: rotate(30deg);
+        transform: scale(9,5);
+        transform: skew(150deg, 18deg);
+    */
+  }
+
+  .tipodetexto1 {
+    color: #f0f0f0;
+    text-align: center;
+  }
+
+
+  .MOTORESNAFTEROS {
+    font-weight: bold;
+    text-align: start;
+    font-size: xx-large;
+    margin: 30px;
+    border: solid wheat;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    color: yellow;
+    animation-name: backInRight;
+    animation-duration: 10s;
+  }
+
+  .tipodetexto1 {
+    color: #f0f0f0;
+    text-align: center;
+  }
+
+  .tipodetexto2 {
+    color: #f0f0f0;
+    text-align: center;
+  }
+
+  .MOTORESACOMBUSTION {
+    text-align: end;
+    color: #f0f0f0;
+    font-size: 48px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    border: solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, black, blue, grey, blue, black);
+    margin: 50px;
+  }
+
+  .IMAGENINDEXCENTRADO {
+    text-align: center;
+
+    .IMAGENINDEX {
+        border-radius: 50px;
+        border-bottom: solid 25px #022863;
+        border-top: solid 25px #022863;
+      }
+  }
 
   }
+
+
+
+
+
+
+
+
+  //SOBRE LA EMPRESA
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

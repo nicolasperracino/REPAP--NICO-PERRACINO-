@@ -1,3 +1,47 @@
+.navbar {
+  background-image: linear-gradient(white, blue, black, white);
+  font-size: large;
+  display: flex;
+  /*background-image: radial-gradient( red, blue, yellow, white) ;
+  */
+}
+.navbar .logo {
+  width: 60px;
+  height: 60px;
+  grid-column: 2/3;
+}
+.navbar .menu {
+  display: flex;
+  justify-content: space;
+  grid-column: 4/7;
+}
+
+.h1titulo {
+  font-family: DatalegreyaThin;
+  font-weight: bold;
+  text-align: center;
+  border: solid;
+  border-radius: 10px;
+  color: #f0f0f0;
+  background-image: linear-gradient(to left, black, blue, grey, blue, black);
+  animation-name: tada;
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+
+#encabezadoshome {
+  font-family: "DatalegreyaThin";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 65px;
+  color: #f0f0f0;
+  background-position: right;
+  background-repeat: repeat-y;
+  background-size: cover;
+  text-align: center;
+  animation-duration: 4s;
+}
+
 .body1 {
   background-color: #807469;
   background-image: url(../assets/LOGO/aventador-sv-002.jpg);
@@ -28,6 +72,23 @@
   animation-duration: 10s;
   animation-delay: 1s;
 }
+.body1 .navbar {
+  background-image: linear-gradient(white, blue, black, white);
+  font-size: large;
+  display: flex;
+  /*background-image: radial-gradient( red, blue, yellow, white) ;
+  */
+}
+.body1 .navbar .logo {
+  width: 60px;
+  height: 60px;
+  grid-column: 2/3;
+}
+.body1 .navbar .menu {
+  display: flex;
+  justify-content: space;
+  grid-column: 4/7;
+}
 .body1 .h1titulo {
   font-family: DatalegreyaThin;
   font-weight: bold;
@@ -35,10 +96,164 @@
   border: solid;
   border-radius: 10px;
   color: #f0f0f0;
-  background-image: linear-gradient(to left, black, blue, grey, blue, black);
+  background-image: linear-gradient(white, blue, black, white);
   animation-name: tada;
   animation-duration: 7s;
   animation-delay: 1s;
+}
+.body1 #grilla2 {
+  display: grid;
+  border: solid;
+  border-radius: 10px;
+  color: #f0f0f0;
+  background-color: #023b99;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, 2fr);
+  width: auto;
+  grid-template-rows: 350px 350px;
+}
+.body1 #grilla2 .nav11 {
+  border: solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #a3a19b;
+  color: white;
+  margin: 10px;
+  justify-content: center;
+}
+.body1 #grilla2 .nav11 .navimg {
+  border: solid yellow;
+  border-radius: 15px;
+  width: 200px;
+  height: 275px;
+  margin: 20px;
+  transition: 3s;
+}
+.body1 #grilla2 .nav11 .navimg:hover {
+  height: 350px;
+  width: 300px;
+}
+.body1 #grilla2 .nav11 .botoncompra {
+  color: aqua;
+  background-color: #000;
+  border: solid blue;
+  border-radius: 10px;
+}
+.body1 #grilla2 .nav22 {
+  display: flex;
+  border: solid;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #a3a19b;
+  margin: 10px;
+  color: white;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.body1 #grilla2 .nav22 .navimg2 {
+  border: solid yellow;
+  border-radius: 15px;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  transition: 3s;
+}
+.body1 #grilla2 .nav22 .navimg2:hover {
+  height: 350px;
+  width: 350px;
+}
+.body1 #grilla2 .nav22 .botoncompra {
+  color: aqua;
+  background-color: #000;
+  border: solid blue;
+  border-radius: 10px;
+}
+.body1 .h2titulo {
+  font-family: "DatalegreyaThin";
+  font-weight: bold;
+  text-align: right;
+  font-size: xx-large;
+  display: grid;
+  color: yellow;
+}
+.body1 .h2titulo .botoncompra2 {
+  text-align: center;
+  align-items: center;
+  font-size: x-large;
+  color: aqua;
+  background-color: #000;
+  border: solid red;
+  border-radius: 10px;
+  height: 100px;
+  transition: height 3s;
+  transform: skewY(2deg);
+}
+.body1 .h2titulo .botoncompra2:hover {
+  height: 200px;
+}
+.body1 .repuestosparamotores {
+  color: antiquewhite;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 50px;
+  font-family: "poppins";
+  text-align: center;
+  border: solid black;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, blue, grey);
+  /*
+      transform: translateX(300px);
+      transform: rotate(30deg);
+      transform: scale(9,5);
+      transform: skew(150deg, 18deg);
+  */
+}
+.body1 .tipodetexto1 {
+  color: #f0f0f0;
+  text-align: center;
+}
+.body1 .MOTORESNAFTEROS {
+  font-weight: bold;
+  text-align: start;
+  font-size: xx-large;
+  margin: 30px;
+  border: solid wheat;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  color: yellow;
+  animation-name: backInRight;
+  animation-duration: 10s;
+}
+.body1 .tipodetexto1 {
+  color: #f0f0f0;
+  text-align: center;
+}
+.body1 .tipodetexto2 {
+  color: #f0f0f0;
+  text-align: center;
+}
+.body1 .MOTORESACOMBUSTION {
+  text-align: end;
+  color: #f0f0f0;
+  font-size: 48px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  border: solid black;
+  border-radius: 5px;
+  background-image: linear-gradient(to left, black, blue, grey, blue, black);
+  margin: 50px;
+}
+.body1 .IMAGENINDEXCENTRADO {
+  text-align: center;
+}
+.body1 .IMAGENINDEXCENTRADO .IMAGENINDEX {
+  border-radius: 50px;
+  border-bottom: solid 25px #022863;
+  border-top: solid 25px #022863;
 }
 
 .bordesRedondeados {
