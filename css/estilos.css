@@ -42,6 +42,40 @@
   animation-duration: 4s;
 }
 
+/*TRABAJOS*/
+/*map get*/
+#grilla3 {
+  display: grid;
+  border: solid;
+  border-radius: 10px;
+  color: #f0f0f0;
+  background-color: #023b99;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(3, 3fr);
+  width: auto;
+  grid-template-rows: 350px 350px;
+}
+
+/*Extend*/
+/*Mixin con parametros*/
+.nav22 {
+  border-radius: 10px;
+  color: white;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #a3a19b;
+  margin: 10px;
+  border: solid;
+}
+
+/*Mixin sin parametros*/
+.nav22 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/*INDEX*/
 .body1 {
   background-color: #807469;
   background-image: url(../assets/LOGO/aventador-sv-002.jpg);
@@ -170,7 +204,7 @@
   border: solid blue;
   border-radius: 10px;
 }
-.body1 .h2titulo {
+.body1 .h2titulo, .body1 .h9titulo {
   font-family: "DatalegreyaThin";
   font-weight: bold;
   text-align: right;
@@ -178,7 +212,7 @@
   display: grid;
   color: yellow;
 }
-.body1 .h2titulo .botoncompra2 {
+.body1 .h2titulo .botoncompra2, .body1 .h9titulo .botoncompra2, .body1 .h2titulo .botoncompra9, .body1 .h9titulo .botoncompra9 {
   text-align: center;
   align-items: center;
   font-size: x-large;
@@ -190,7 +224,7 @@
   transition: height 3s;
   transform: skewY(2deg);
 }
-.body1 .h2titulo .botoncompra2:hover {
+.body1 .h2titulo .botoncompra2:hover, .body1 .h9titulo .botoncompra2:hover, .body1 .h2titulo .botoncompra9:hover, .body1 .h9titulo .botoncompra9:hover {
   height: 200px;
 }
 .body1 .repuestosparamotores {
@@ -256,6 +290,7 @@
   border-top: solid 25px #022863;
 }
 
+/*SOBRELAEMPRESA*/
 .bordesRedondeados {
   border: solid 5px blue;
   border-left: 10px;
@@ -690,7 +725,7 @@ main h3 {
   animation-delay: 1s;
 }
 
-.h2titulo {
+.h2titulo, .h9titulo {
   font-family: "DatalegreyaThin";
   font-weight: bold;
   text-align: right;
@@ -789,7 +824,7 @@ main h3 {
   border-radius: 10px;
 }
 
-.botoncompra2 {
+.botoncompra2, .botoncompra9 {
   text-align: center;
   align-items: center;
   font-size: x-large;
@@ -802,7 +837,7 @@ main h3 {
   transform: skewY(2deg);
 }
 
-.botoncompra2:hover {
+.botoncompra2:hover, .botoncompra9:hover {
   height: 200px;
 }
 
@@ -880,7 +915,7 @@ main h3 {
     font-size: large;
   }
 
-  .h2titulo {
+  .h2titulo, .h9titulo {
     background-color: rgb(94, 87, 87);
     text-align: center;
     border: solid yellow;
@@ -889,7 +924,7 @@ main h3 {
     font-size: large;
   }
 
-  .botoncompra2 {
+  .botoncompra2, .botoncompra9 {
     text-align: center;
     align-items: center;
     font-size: x-large;
@@ -944,12 +979,12 @@ main h3 {
     height: 150px;
   }
 
-  .h2titulo {
+  .h2titulo, .h9titulo {
     display: grid;
     width: fit-content;
   }
 
-  .botoncompra2 {
+  .botoncompra2, .botoncompra9 {
     font-size: small;
   }
 

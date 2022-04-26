@@ -1,0 +1,66 @@
+/*TRABAJOS*/
+
+/*map get*/
+
+$estilos: (
+    color-fondo: #023b99,
+    bordes:solid,
+    color-letra: #f0f0f0,
+    espesor-radio-border: 10px
+);
+
+#grilla3 {
+    display: grid;
+    border: map-get($map: $estilos, $key: bordes );
+    border-radius: map-get($map: $estilos, $key:espesor-radio-border );
+    color: map-get($map: $estilos, $key: color-letra );
+    background-color: map-get($map: $estilos, $key: color-fondo);
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 3fr);
+    width: auto;
+    grid-template-rows: 350px 350px;
+  }
+
+
+/*Extend*/
+
+.h9titulo {
+
+    @extend .h2titulo;
+}
+
+.botoncompra9 {
+
+    @extend .botoncompra2;
+}
+
+/*Mixin con parametros*/
+
+@mixin colores ($color-fondo2, $margen, $borde) {
+
+    background-color: $color-fondo2 ;
+    margin:$margen;
+    border:$borde ;
+    
+}
+
+.nav22 {
+    border-radius: 10px;
+    color: white;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+    @include colores(#a3a19b, 10px ,solid )
+  }
+
+/*Mixin sin parametros*/
+
+@mixin center-center-flex {
+    align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.nav22 {
+    @include center-center-flex
+  }
