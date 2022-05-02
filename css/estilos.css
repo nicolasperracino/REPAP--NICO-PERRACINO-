@@ -45,15 +45,10 @@
 /*TRABAJOS*/
 /*map get*/
 #grilla3 {
-  display: grid;
   border: solid;
   border-radius: 10px;
   color: #f0f0f0;
   background-color: #023b99;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(3, 3fr);
-  width: auto;
-  grid-template-rows: 350px 350px;
 }
 
 /*Extend*/
@@ -152,8 +147,6 @@
   border-radius: 10px;
   color: #f0f0f0;
   background-color: #023b99;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(3, 3fr);
   width: auto;
   grid-template-rows: 350px 350px;
 }
@@ -166,8 +159,6 @@
   background-color: #a3a19b;
   margin: 10px;
   color: white;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
 }
 .body1 #grilla3 .nav22 .navimg {
   border: solid yellow;
@@ -180,36 +171,6 @@
 .body1 #grilla3 .nav22 .navimg:hover {
   height: 350px;
   width: 300px;
-}
-.body1 #grilla3 .nav22 .botoncompra {
-  color: aqua;
-  background-color: #000;
-  border: solid blue;
-  border-radius: 10px;
-}
-.body1 #grilla3 .nav22 {
-  display: flex;
-  border: solid;
-  border-radius: 10px;
-  align-items: center;
-  justify-content: center;
-  background-color: #a3a19b;
-  margin: 10px;
-  color: white;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-.body1 #grilla3 .nav22 .navimg2 {
-  border: solid yellow;
-  border-radius: 15px;
-  width: 300px;
-  height: 200px;
-  margin: 20px;
-  transition: 3s;
-}
-.body1 #grilla3 .nav22 .navimg2:hover {
-  height: 350px;
-  width: 350px;
 }
 .body1 #grilla3 .nav22 .botoncompra {
   color: aqua;
@@ -451,8 +412,6 @@
   border-radius: 10px;
   color: #f0f0f0;
   background-color: #023b99;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(3, 3fr);
   width: auto;
   grid-template-rows: 350px 350px;
 }
@@ -702,9 +661,9 @@
     margin: 5px;
     display: grid;
     border: solid;
-    grid-column: 2.1fr;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    width: fit-content;
   }
 
   #grilla2 {

@@ -10,17 +10,11 @@ $estilos: (
 );
 
 #grilla3 {
-    display: grid;
     border: map-get($map: $estilos, $key: bordes );
-    border-radius: map-get($map: $estilos, $key:espesor-radio-border );
+    border-radius: map-get($map: $estilos, $key:espesor-radio-border);
     color: map-get($map: $estilos, $key: color-letra );
     background-color: map-get($map: $estilos, $key: color-fondo);
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(3, 3fr);
-    width: auto;
-    grid-template-rows: 350px 350px;
   }
-
 
 /*Extend*/
 

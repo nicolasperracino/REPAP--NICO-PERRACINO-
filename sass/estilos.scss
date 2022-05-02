@@ -99,8 +99,6 @@ $animacion-titulo-principal : bounce;
     border-radius: 10px;
     color: #f0f0f0;
     background-color: #023b99;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(3, 3fr);
     width: auto;
     grid-template-rows: 350px 350px;
 
@@ -113,8 +111,6 @@ $animacion-titulo-principal : bounce;
         background-color: #a3a19b;
         margin: 10px;
         color: white;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
 
         .navimg {
             border: solid $navimg-color;
@@ -137,37 +133,6 @@ $animacion-titulo-principal : bounce;
             }
         }
 
-    .nav22 {
-        display: flex;
-        border: solid;
-        border-radius: 10px;
-        align-items: center;
-        justify-content: center;
-        background-color: #a3a19b;
-        margin: 10px;
-        color: white;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        .navimg2 {
-            border: solid $navimg-color;
-            border-radius: 15px;
-            width: 300px;
-            height: 200px;
-            margin: 20px;
-            transition: 3s;
-
-            &:hover {
-                height: 350px;
-                width: 350px;
-              }
-            }
-        .botoncompra {
-                color: $boton-compra-color;
-                background-color: #000;
-                border: solid blue;
-                border-radius: 10px;
-      }
-          }
 }
 
 .h2titulo {
@@ -438,8 +403,6 @@ $animacion-titulo-principal : bounce;
         border-radius: 10px;
         color: #f0f0f0;
         background-color: #023b99;
-        grid-template-columns: repeat(2, 2fr);
-        grid-template-rows: repeat(3, 3fr);
         width: auto;
         grid-template-rows: 350px 350px;
 
@@ -725,10 +688,9 @@ $animacion-titulo-principal : bounce;
         margin: 5px;
         display: grid;
         border: solid;
-        grid-column: calc(2.1fr);
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(4,1fr);
-    
+        grid-template-rows: repeat(1,1fr);
+    width: fit-content;
     }
 
     #grilla2{
